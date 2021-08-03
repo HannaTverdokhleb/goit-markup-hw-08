@@ -9,12 +9,10 @@
     height: auto;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header {
     padding: 21px 0;
-  }
-  .logo {
-    font-size: 24px;
   }
   .header-logo {
     margin-right: 88px;
@@ -31,6 +29,27 @@
       margin-right: 8px;
     }
   }
+  .point-item {
+    max-width: 354px;
+    flex-basis: calc((100%-60px) / 2);
+  }
+
+  .card-row {
+    justify-content: center;
+  }
+  .card {
+    flex-basis: calc((100%-60px) / 2);
+    max-width: 354px;
+  }
+
+  .customer-item {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+}
+@media screen and (max-width: 1199px) {
+  .logo {
+    font-size: 24px;
+  }
   .hero {
     padding: 118px 0;
   }
@@ -41,30 +60,30 @@
   .advantages-row {
     justify-content: center;
   }
-
-  .point-item {
-    max-width: 354px;
-    flex-basis: calc((100%-60px) / 2);
+  .modal {
+    width: 100%;
+    max-width: 450px;
   }
-  .we-do-section {
-    display: none;
+  .check-label,
+  .conditions-link {
+    font-size: 12px;
   }
   .section,
   .advantages {
     padding: 60px 0;
   }
-  .card-row {
-    justify-content: center;
+  .we-do-section {
+    display: none;
   }
-  .card {
-    flex-basis: calc((100%-60px) / 2);
-    max-width: 354px;
+  .second-title,
+  .team-title,
+  .regular-customers-title {
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 30px;
   }
   .customer-link-row {
     flex-wrap: wrap;
-  }
-  .customer-item {
-    flex-basis: calc((100% - 90px) / 3);
   }
   .left-column,
   .second-column {
@@ -85,24 +104,55 @@
   .mailing {
     flex-direction: column;
   }
-
   .mailing-button {
     margin: 20px auto 0 auto;
   }
-  .second-title,
-  .team-title,
-  .regular-customers-title {
-    font-size: 28px;
-    line-height: 1.2;
-  }
-  .modal {
-    width: 100%;
-    max-width: 450px;
-  }
-  .check-label,
-  .conditions-link {
-    font-size: 12px;
-  }
 }
 @media screen and (max-width: 767px) {
+  .nav-row {
+    &.space {
+      flex: 0 0 100%;
+    }
+  }
+  .row {
+    &.navigation {
+      display: none;
+    }
+  }
+  .link-row {
+    display: none;
+  }
+  .header {
+    padding: 10px 0;
+  }
+  .advantages-row {
+    display: block;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .point-item {
+    max-width: 100%;
+    &:last-child {
+      margin: 0;
+    }
+    &:not(:last-child) {
+      margin: 0 0 30px 0;
+    }
+  }
+  .card-row {
+    display: block;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  .card {
+    margin-left: 0;
+  }
+  .customer-item {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  .left-column,
+  .second-column,
+  .third-column {
+    flex: 0 0 100%;
+  }
 }
