@@ -1,0 +1,29 @@
+.advantages {
+  padding-top: 94px;
+}
+.advantages-row {
+  margin-top: -30px;
+  margin-left: -30px;
+  justify-content: center;
+}
+
+.point-item {
+  max-width: 270px;
+  margin: 30px 0 0 30px;
+  flex-basis: calc((100%-120px) / 4);
+}
+
+.point-header {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.text {
+  color: var(--sub-text-color);
+  line-height: 1.7;
+}
+.point-value {
+  letter-spacing: 0.03rem;
+}

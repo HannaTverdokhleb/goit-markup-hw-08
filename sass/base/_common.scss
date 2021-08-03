@@ -1,0 +1,54 @@
+body {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--main-text-color);
+  margin: 0;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+}
+.second-title,
+.team-title,
+.regular-customers-title {
+  font-size: 36px;
+  line-height: 1.7;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.section {
+  padding: 94px 0;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.space {
+  align-items: center;
+  justify-content: space-between;
+}
+input,
+textarea {
+  box-sizing: border-box;
+}
+.is-hidden {
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+}
