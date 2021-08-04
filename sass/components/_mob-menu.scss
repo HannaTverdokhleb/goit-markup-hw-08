@@ -61,20 +61,23 @@
     font-size: 40px;
     line-height: 1.2;
     margin-bottom: 32px;
+    &.active {
+      color: var(--brand-color);
+    }
   }
 }
 .mobile-social-list {
   display: flex;
   margin-top: 54px;
   flex-wrap: wrap;
-  margin-right: -10px;
+  margin-left: -10px;
 }
 .mobile-social-item {
   padding: 10px;
   &:not(:last-child) {
     position: relative;
     &:after {
-      content: '';
+      content: "";
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
@@ -92,5 +95,3 @@
   letter-spacing: 0.02em;
   color: var(--brand-color);
 }
-
-
