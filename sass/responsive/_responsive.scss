@@ -67,6 +67,7 @@
   .check-label,
   .conditions-link {
     font-size: 12px;
+    line-height: 1.2;
   }
   .section,
   .advantages {
@@ -155,4 +156,29 @@
   .third-column {
     flex: 0 0 100%;
   }
+  .modal {
+    width: 93%;
+  }
+  .mobile-contact-item {
+    &:first-child {
+      margin-bottom: 32px;
+    }
+  }
+  .mobile-contact-link {
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    &.tel {
+      font-size: 34px;
+      color: var(--brand-color);
+    }
+    &.mail {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.02em;
+      color: var(--sub-text-color);
+    }
+  }
+  
 }
