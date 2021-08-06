@@ -213,7 +213,7 @@
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 1600px 600px;
 }
 
 .hero-title {
@@ -472,12 +472,14 @@
 .portfolio-row {
   margin-top: -30px;
   margin-left: -30px;
+  justify-content: center;
 }
 
 .portfolio-card {
   flex-basis: calc((100% - 90px) / 3);
   margin-top: 30px;
   margin-left: 30px;
+  max-width: 370px;
 }
 
 .portfolio-card-wrapper {
@@ -784,6 +786,8 @@ textarea {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 div {
@@ -927,12 +931,10 @@ p {
 
 @media screen and (max-width: 1200px) {
   .container {
-    max-width: 100%;
-    width: 100%;
     padding: 0 15px;
   }
   img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
   }
 }
@@ -965,13 +967,16 @@ p {
   }
   .card {
     flex-basis: calc((100%-60px) / 2);
-    max-width: 354px;
+    max-width: 270px;
   }
   .customer-item {
     flex-basis: calc((100% - 90px) / 3);
   }
   .portfolio-card {
     flex-basis: calc((100% - 60px) / 2);
+  }
+  .portfolio-card img {
+    width: 100%;
   }
 }
 
@@ -981,6 +986,7 @@ p {
   }
   .hero {
     padding: 118px 0;
+    background-size: cover;
   }
   .hero-title {
     font-size: 26px;
@@ -1025,6 +1031,9 @@ p {
   .footer-social-icons {
     justify-content: center;
   }
+  .mailing-input {
+    margin-right: 0;
+  }
   .third-column {
     flex: 0 0 450px;
     margin: 0 auto;
@@ -1043,6 +1052,9 @@ p {
 }
 
 @media screen and (max-width: 767px) {
+  .container {
+    max-width: 450px;
+  }
   .nav-row.space {
     flex: 0 0 100%;
   }
@@ -1057,10 +1069,10 @@ p {
   }
   .advantages-row {
     display: block;
-    max-width: 480px;
     margin: 0 auto;
   }
   .point-item {
+    flex-basis: 100%;
     max-width: 100%;
   }
   .point-item:last-child {
@@ -1071,11 +1083,14 @@ p {
   }
   .card-row {
     display: block;
-    max-width: 450px;
     margin: 0 auto;
   }
   .card {
     margin-left: 0;
+  }
+  .social-icons {
+    max-width: 200px;
+    margin: 16px auto 0 auto;
   }
   .customer-item {
     flex-basis: calc((100% - 60px) / 2);
@@ -1116,8 +1131,18 @@ p {
   .list-item {
     margin-top: 15px;
   }
+  .portfolio-row {
+    margin-top: -30px;
+  }
   .portfolio-card {
-    flex-basis: calc((100% - 30px) / 1);
+    flex-basis: 100%;
+    margin: 30px 0 0 0;
+  }
+  .check-label {
+    display: block;
+  }
+  .check-label::before {
+    display: -webkit-inline-box;
   }
 }
 
