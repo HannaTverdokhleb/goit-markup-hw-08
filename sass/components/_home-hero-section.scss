@@ -7,13 +7,23 @@
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/hero-bg.jpg");
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero-bg@2x.jpg");
+  }
   background-repeat: no-repeat;
   background-position: center;
   background-size: 1600px 600px;
 }
 .hero-title {
   font-size: 44px;
-  line-height: 1.4;
+  line-height: 1.36;
   text-transform: uppercase;
   color: var(--white-color);
   text-align: center;
