@@ -9,6 +9,9 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    max-width: 768px;
+  }
   .header {
     padding: 21px 0;
   }
@@ -45,6 +48,11 @@
   }
   .portfolio-card {
     flex-basis: calc((100% - 60px) / 2);
+    &:first-child {
+      .portfolio-info {
+        padding-bottom: 56px;
+      }
+    }
     img {
       width: 100%;
     }
@@ -122,7 +130,8 @@
 }
 @media screen and (max-width: 767px) {
   .container {
-    max-width: 450px;
+    max-width: 480px;
+    padding: 0 15px;
   }
   .nav-row {
     &.space {
