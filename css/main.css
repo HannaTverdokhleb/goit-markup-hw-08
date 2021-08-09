@@ -929,16 +929,6 @@ p {
   color: var(--brand-color);
 }
 
-@media screen and (max-width: 1200px) {
-  .container {
-    padding: 0 15px;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     max-width: 768px;
@@ -970,7 +960,7 @@ p {
   }
   .card {
     flex-basis: calc((100%-60px) / 2);
-    max-width: 270px;
+    max-width: 354px;
   }
   .customer-item {
     flex-basis: calc((100% - 90px) / 3);
@@ -1139,11 +1129,16 @@ p {
     margin-top: 15px;
   }
   .portfolio-row {
-    margin-top: -30px;
+    margin-top: 0;
+    margin-left: 0;
   }
   .portfolio-card {
     flex-basis: 100%;
-    margin: 30px 0 0 0;
+    margin: 0;
+    max-width: 450px;
+  }
+  .portfolio-card:not(:first-child) {
+    margin-top: 30px;
   }
   .check-label {
     display: block;
