@@ -478,7 +478,6 @@
 .portfolio-row {
   margin-top: -30px;
   margin-left: -30px;
-  justify-content: center;
 }
 
 .portfolio-card {
@@ -496,7 +495,7 @@
 .portfolio-card-overlay {
   position: absolute;
   font-size: 18px;
-  line-height: 28px;
+  line-height: 1.6;
   letter-spacing: 0.03em;
   color: var(--white-color);
   padding: 63px 24px;
@@ -505,7 +504,6 @@
   transition: transform 250ms linear;
   width: 100%;
   height: 100%;
-  overflow-y: auto;
 }
 
 .portfolio-info {
@@ -986,11 +984,8 @@ p {
   .portfolio-card {
     flex-basis: calc((100% - 60px) / 2);
   }
-  .portfolio-card:first-child .portfolio-info {
-    padding-bottom: 56px;
-  }
-  .portfolio-card img {
-    width: 100%;
+  .portfolio-card:nth-child(2) .portfolio-info {
+    padding-right: 0;
   }
 }
 

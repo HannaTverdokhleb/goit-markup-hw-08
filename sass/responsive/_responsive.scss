@@ -55,13 +55,10 @@
   }
   .portfolio-card {
     flex-basis: calc((100% - 60px) / 2);
-    &:first-child {
+    &:nth-child(2) {
       .portfolio-info {
-        padding-bottom: 56px;
+        padding-right: 0;
       }
-    }
-    img {
-      width: 100%;
     }
   }
 }
